@@ -1,12 +1,12 @@
 <?php
 
-namespace Intra\Docavel\Tools;
+namespace INTRA\Docavel\Tools;
 
 use Illuminate\Routing\Route;
-use Intra\Docavel\Tools\ResponseStrategies\ResponseCallStrategy;
-use Intra\Docavel\Tools\ResponseStrategies\ResponseFileStrategy;
-use Intra\Docavel\Tools\ResponseStrategies\ResponseTagStrategy;
-use Intra\Docavel\Tools\ResponseStrategies\TransformerTagsStrategy;
+use INTRA\Docavel\Tools\ResponseStrategies\ResponseCallStrategy;
+use INTRA\Docavel\Tools\ResponseStrategies\ResponseFileStrategy;
+use INTRA\Docavel\Tools\ResponseStrategies\ResponseTagStrategy;
+use INTRA\Docavel\Tools\ResponseStrategies\TransformerTagsStrategy;
 use Symfony\Component\HttpFoundation\Response;
 
 class ResponseResolver

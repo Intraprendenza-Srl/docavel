@@ -1,13 +1,13 @@
 <?php
 
-namespace Intra\Docavel\Tools\ResponseStrategies;
+namespace INTRA\Docavel\Tools\ResponseStrategies;
 
 use Dingo\Api\Dispatcher;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Route;
 use Illuminate\Support\Str;
-use Intra\Docavel\Tools\Traits\ParamHelpers;
+use INTRA\Docavel\Tools\Traits\ParamHelpers;
 
 /**
  * Make a call to the route and retrieve its response.
@@ -76,7 +76,7 @@ class ResponseCallStrategy
         // Mix in parsed parameters with manually specified parameters.
         $queryParams = collect($this->cleanParams($queryParams))->merge($rulesToApply['query'] ?? [])->toArray();
         $bodyParams = collect($this->cleanParams($bodyParams))->merge($rulesToApply['body'] ?? [])->toArray();
-        
+
         $request = Request::create($uri, $method, [], $cookies, [], $this->transformHeadersToServerVars($rulesToApply['headers'] ?? []), json_encode($bodyParams));
         $request = $this->addHeaders($request, $route, $rulesToApply['headers'] ?? []);
         $request = $this->addQueryParameters($request, $queryParams);
@@ -283,7 +283,7 @@ class ResponseCallStrategy
         $without_middleware =  $this->rulesToApply['without_middleware'];
 
         if (! empty($without_middleware)) {
-            
+
             if (in_array("*",$without_middleware)) {
 
                 $kernel->getApplication()->instance("middleware.disable", true);
