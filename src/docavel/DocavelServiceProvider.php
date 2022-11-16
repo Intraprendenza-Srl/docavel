@@ -1,6 +1,6 @@
 <?php
 
-namespace Intra\Docavel;
+namespace INTRA\Docavel;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;

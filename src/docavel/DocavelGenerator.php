@@ -1,13 +1,13 @@
 <?php
 
-namespace Intra\Docavel;
+namespace INTRA\Docavel;
 
 use Faker\Factory;
 use Illuminate\Routing\Route;
 use Mpociot\Reflection\DocBlock;
 use Mpociot\Reflection\DocBlock\Tag;
-use Intra\Docavel\Tools\ResponseResolver;
-use Intra\Docavel\Tools\Traits\ParamHelpers;
+use INTRA\Docavel\Tools\ResponseResolver;
+use INTRA\Docavel\Tools\Traits\ParamHelpers;
 use ReflectionClass;
 use ReflectionMethod;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Intra\Docavel\Tools;
+namespace INTRA\Docavel\Tools;
 
 use Illuminate\Routing\Route;
 

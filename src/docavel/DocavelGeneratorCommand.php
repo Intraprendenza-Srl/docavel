@@ -1,19 +1,19 @@
 <?php
 
-namespace Intra\Docavel;
+namespace INTRA\Docavel;
 
 use Illuminate\Console\Command;
 use Illuminate\Routing\Route;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\File;
 use Mpociot\Reflection\DocBlock;
-use Intra\Docavel\Tools\RouteMatcher;
+use INTRA\Docavel\Tools\RouteMatcher;
 use ReflectionClass;
 use ReflectionException;
 
 /**
  * This custom generator will parse and generate a beautiful
- * interractive documentation with openAPI schema.
+ * interactive documentation with openAPI schema.
  */
 class DocavelGeneratorCommand extends Command
 {

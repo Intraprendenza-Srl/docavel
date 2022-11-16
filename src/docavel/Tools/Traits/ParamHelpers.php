@@ -1,6 +1,6 @@
 <?php
 
-namespace Intra\Docavel\Tools\Traits;
+namespace INTRA\Docavel\Tools\Traits;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
