@@ -1,5 +1,5 @@
 {
-    "name": "intra/docavel",
+    "name": "intraprendenza/docavel",
     "license": "MIT",
     "description": "Auto-generate API documentation from your Laravel application",
     "keywords": [
