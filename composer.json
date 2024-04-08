@@ -1,34 +1,34 @@
 {
     "name": "intra/docavel",
     "license": "MIT",
-    "description": "Auto generate API documentation from your Laravel application",
+    "description": "Auto-generate API documentation from your Laravel application",
     "keywords": [
         "API",
         "Documentation",
         "Laravel"
     ],
-    "homepage": "https://github.com/FedericoValorize/docavel",
+    "homepage": "https://github.com/Intraprendenza-Srl/docavel",
     "authors": [
         {
-            "name": "Federico Boggia (TheRealF)",
-            "email": "federico@valorize.io"
+            "name": "Intraprendenza",
+            "email": "business@intraprendenza.io"
         }
     ],
     "require": {
-        "php": ">=7.0.0",
+        "php": "^7.0",
         "fakerphp/faker": "^1.12",
-        "illuminate/routing": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6.0 || ^7.0 || ^8.0",
-        "illuminate/support": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6.0 || ^7.0 || ^8.0",
-        "illuminate/console": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6.0 || ^7.0 || ^8.0",
+        "illuminate/routing": "^5.5|^6.0|^7.0|^8.0|^9.0",
+        "illuminate/support": "^5.5|^6.0|^7.0|^8.0|^9.0",
+        "illuminate/console": "^5.5|^6.0|^7.0|^8.0",
         "mpociot/reflection-docblock": "^1.0.1",
-        "ramsey/uuid": "^3.8 || ^4.0"
+        "ramsey/uuid": "^3.8|^4.0"
     },
     "require-dev": {
-        "orchestra/testbench": "3.5.* || 3.6.* || 3.7.* || 5.1.* || ^6.0",
-        "phpunit/phpunit": "^6.0.0 || ^7.4.0 || ^9.0",
-        "dingo/api": "2.0.0-alpha1",
-        "mockery/mockery": "^1.2.0",
-        "league/fractal": "^0.17.0"
+        "orchestra/testbench": "^3.5|^5.1|^6.0",
+        "phpunit/phpunit": "^6.0|^7.4|^9.0",
+        "dingo/api": "^2.0@alpha",
+        "mockery/mockery": "^1.2",
+        "league/fractal": "^0.17"
     },
     "autoload": {
         "files": [
@@ -43,6 +43,8 @@
             "providers": [
                 "INTRA\\Docavel\\DocavelServiceProvider"
             ]
-       }
-    }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
